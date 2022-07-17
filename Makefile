@@ -1,5 +1,5 @@
 FILES   = src/main.c
-HEADERS = src/bml/main.h 
+HEADERS = src/bml/main.h src/bml/fetch.h src/bml/pref.h
 NAME    = bm
 CC      = gcc
 CFLAGS  = -Wall
