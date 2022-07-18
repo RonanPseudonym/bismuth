@@ -1,5 +1,5 @@
-FILES   = src/main.c src/bml/lexer.c src/ui/io.c
-HEADERS = src/bml/main.h src/bml/fetch.h src/bml/pref.h src/bml/lexer.h src/ui/io.h
+FILES   = src/main.c src/ui/io.c
+HEADERS = src/ui/io.h
 NAME    = bm
 CC      = gcc
 CFLAGS  = -Wall -Wextra -pedantic

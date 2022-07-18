@@ -1,0 +1,25 @@
+[meta]
+name = "bismuth"
+description = "A simple build system for C and C++"
+version = 0.1
+license = "gpl"
+created = 2022-06-18 # UTC
+
+[module]
+include = [
+	"glfw",
+	"vector",
+	"hashmap"
+]
+
+[compile]
+compiler = "gcc"
+flags = [
+	"Wall",
+	"Wextra",
+	"pedantic"
+]
+format = "gcc $FILE -o $EXEC"
+
+[user]
+user-defined = "banana"
