@@ -1,8 +1,8 @@
-FILES   = src/main.c
-HEADERS = src/bml/main.h src/bml/fetch.h src/bml/pref.h
+FILES   = src/main.c src/bml/lexer.c src/ui/io.c
+HEADERS = src/bml/main.h src/bml/fetch.h src/bml/pref.h src/bml/lexer.h src/ui/io.h
 NAME    = bm
 CC      = gcc
-CFLAGS  = -Wall
+CFLAGS  = -Wall -Wextra -pedantic
 BIN_P   = /usr/local/bin
 
 $(NAME): $(FILES) $(HEADERS)

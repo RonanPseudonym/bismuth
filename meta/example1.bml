@@ -6,14 +6,13 @@ license:     gpl
 
 [module]
 include: {
-	glfw   :: latest
-	vector :: 1.2
-    }
+	glfw
+	vector
+}
 
 [compile]
 compiler: gcc
 format:   gcc $FILE -o $EXEC
 
 [user]
-user-defined: banana      # Can be called with bml_var("user-defined")
-
+user-defined: banana      # Can be called with bml_sfetch("user-defined")
